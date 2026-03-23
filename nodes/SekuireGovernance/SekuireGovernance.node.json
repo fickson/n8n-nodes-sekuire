@@ -1,0 +1,9 @@
+{
+  "node": "n8n-nodes-sekuire.sekuireGovernance",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["AI"],
+  "subcategories": {
+    "AI": ["Governance"]
+  }
+}

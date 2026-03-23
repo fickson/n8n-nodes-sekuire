@@ -1,0 +1,42 @@
+{
+  "name": "n8n-nodes-sekuire",
+  "version": "0.1.0",
+  "description": "n8n community nodes for Sekuire AI governance - policy enforcement, model guardrails, and audit logging",
+  "license": "MIT",
+  "homepage": "https://sekuire.ai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sekuire/n8n-nodes-sekuire"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/SekuireApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/SekuireGovernance/SekuireGovernance.node.js",
+      "dist/nodes/SekuireLlm/SekuireLlm.node.js"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@sekuire/sdk": "latest"
+  },
+  "devDependencies": {
+    "n8n-workflow": "^1.0.0",
+    "typescript": "^5.0.0",
+    "gulp": "^4.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "^1.0.0"
+  }
+}
