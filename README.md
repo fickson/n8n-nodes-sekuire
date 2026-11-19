@@ -38,7 +38,7 @@ A policy enforcement gate node. Place it before any AI node in your workflow to 
 - **Stop Execution** - Throws an error and halts the workflow on policy violation
 - **Continue with Warning** - Adds a `_sekuireWarning` field to the output and continues
 
-**Policy input:** Provide a Sekuire policy as inline JSON. The policy follows the [OAGS specification](https://github.com/sekuire/oags) schema. When no `content` field is present in the policy, the node passes data through without enforcement.
+**Policy input:** Provide a Sekuire policy as inline JSON. The policy follows the [OAGS specification](https://github.com/fickson/oags) schema. When no `content` field is present in the policy, the node passes data through without enforcement.
 
 ### Sekuire LLM
 
@@ -132,6 +132,6 @@ Chain multiple Governance nodes to enforce different policy aspects independentl
 ## Links
 
 - [Sekuire Documentation](https://sekuire.ai/docs)
-- [OAGS Specification](https://github.com/sekuire/oags)
-- [TypeScript SDK](https://github.com/sekuire/sdk)
+- [OAGS Specification](https://github.com/fickson/oags)
+- [TypeScript SDK](https://github.com/fickson/typescript-sdk)
 - [n8n Community Nodes Documentation](https://docs.n8n.io/integrations/community-nodes/)
