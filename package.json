@@ -6,7 +6,7 @@
   "homepage": "https://sekuire.ai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sekuire/n8n-nodes-sekuire"
+    "url": "https://github.com/fickson/n8n-nodes-sekuire"
   },
   "main": "dist/index.js",
   "scripts": {
